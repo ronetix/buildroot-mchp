@@ -1,0 +1,26 @@
+From b37359c540fa8e71d552d911e7e078482cb1d155 Mon Sep 17 00:00:00 2001
+From: Ilko Iliev <iliev@ronetix.at>
+Date: Mon, 24 Feb 2025 11:07:59 +0100
+Subject: [PATCH] sama5d3xcm.dtsi - Change PMECC from 4 to 8-bits
+
+Signed-off-by: Ilko Iliev <iliev@ronetix.at>
+---
+ arch/arm/boot/dts/sama5d3xcm.dtsi | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/arm/boot/dts/sama5d3xcm.dtsi b/arch/arm/boot/dts/sama5d3xcm.dtsi
+index b5e111b29da1..ec1c7a11b17b 100644
+--- a/arch/arm/boot/dts/sama5d3xcm.dtsi
++++ b/arch/arm/boot/dts/sama5d3xcm.dtsi
+@@ -40,7 +40,7 @@
+ 			nand-bus-width = <8>;
+ 			nand-ecc-mode = "hw";
+ 			atmel,has-pmecc;
+-			atmel,pmecc-cap = <4>;
++			atmel,pmecc-cap = <8>;
+ 			atmel,pmecc-sector-size = <512>;
+ 			nand-on-flash-bbt;
+ 			status = "okay";
+-- 
+2.43.0
+
